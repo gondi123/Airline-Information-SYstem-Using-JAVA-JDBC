@@ -19,16 +19,22 @@ public class DBconnection {
 public    Connection connect()
     {
         try{
-        Class.forName("com.mysql.jdbc.driver");
+            
+         // registering the drivers nothing but creating a instance of driver class of jdbc api 
+           //mysql driver class is com.mysql.jdbc.driver
+        DriverManager.registerDriver("com.mysql.jdbc.driver");
         System.out.println("connection success");
         
     }catch(Exception e)
     {
      System.out.println("error="+e);   
     }
+    
     String url="jdbc:mysql://localhost:3306/myapp";
             
     try{
+        
+        //getting connection using drivermanager class
         DBconnection=(Connection) DriverManager.getConnection(url,"root","");
         System.out.println("connection");
         
