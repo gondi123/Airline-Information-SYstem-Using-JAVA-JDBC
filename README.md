@@ -5,7 +5,7 @@ this provide air services details like flight name and timings and which route a
 
 front end UI is desgined  using java swings,
 
-Backend UI  is desgined using JDBC API and Mysql server,
+Backend UI  Java, JDBC API and Mysql server,
 
 
 How To use Application:-
